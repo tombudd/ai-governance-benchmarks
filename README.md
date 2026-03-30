@@ -2,7 +2,7 @@
 
 > Evaluation methodology and benchmark suite for measuring AI governance properties — alignment fidelity, constitutional adherence, adversarial robustness, and accountability completeness.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)]()
 [![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)]()
 
