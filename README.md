@@ -24,6 +24,8 @@ This repository defines clean-room benchmark dimensions, scoring rubrics, sample
 
 This repository does **not** disclose private production architecture, proprietary schemas, private logs, real deployment receipts, or internal system prompts.
 
+For role-positioned evidence, see the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md).
+
 ---
 
 ## Implemented Benchmarks
@@ -179,6 +181,8 @@ ai-governance-benchmarks/
 ├── .github/
 │   └── workflows/
 │       └── test.yml
+├── docs/
+│   └── HIRING_PROOF_MAP.md
 ├── evaluation/
 │   ├── __init__.py
 │   ├── runner.py
