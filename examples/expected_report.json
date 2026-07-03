@@ -1,0 +1,14 @@
+{
+  "benchmark": "constitutional_adherence_synthetic_v1",
+  "total_cases": 3,
+  "passed": 3,
+  "failed": 0,
+  "score": 100,
+  "grade": "A",
+  "limitations": [
+    "Synthetic examples only",
+    "Rule-based scorer only",
+    "Does not prove deployment safety",
+    "Does not evaluate private systems"
+  ]
+}

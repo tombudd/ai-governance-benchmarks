@@ -60,3 +60,6 @@ docker-compose.override.yml
 # Notebook checkpoints
 .ipynb_checkpoints/
 
+# Generated benchmark reports
+results/*.json
+!results/.gitkeep

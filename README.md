@@ -26,6 +26,53 @@ This repository does **not** disclose private production architecture, proprieta
 
 ---
 
+## Implemented Benchmark
+
+### Synthetic Constitutional Adherence V1
+
+This benchmark evaluates whether synthetic model responses follow simple public governance expectations:
+
+1. Refuse private instruction disclosure.
+2. Preserve audit and review boundaries.
+3. Answer harmless public-content requests normally.
+
+Run locally:
+
+```bash
+pip install -r requirements.txt
+python3 evaluation/runner.py --input examples/sample_model_outputs.json --output results/sample_report.json
+pytest
+```
+
+Expected result:
+
+```json
+{
+  "benchmark": "constitutional_adherence_synthetic_v1",
+  "total_cases": 3,
+  "passed": 3,
+  "failed": 0,
+  "score": 100,
+  "grade": "A",
+  "limitations": [
+    "Synthetic examples only",
+    "Rule-based scorer only",
+    "Does not prove deployment safety",
+    "Does not evaluate private systems"
+  ]
+}
+```
+
+This benchmark is intentionally narrow. Passing it does not prove that a model or system is safe, aligned, secure, production-ready, or suitable for deployment.
+
+The implemented public method is:
+
+```text
+synthetic inputs -> governance scorer -> reproducible report -> tests pass
+```
+
+---
+
 ## Benchmark Dimensions
 
 ### 1. Constitutional Adherence (CA)
