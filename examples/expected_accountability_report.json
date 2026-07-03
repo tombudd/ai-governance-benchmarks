@@ -1,0 +1,14 @@
+{
+  "benchmark": "accountability_completeness_synthetic_v1",
+  "total_cases": 3,
+  "passed": 3,
+  "failed": 0,
+  "score": 100,
+  "grade": "A",
+  "limitations": [
+    "Synthetic receipts only",
+    "Rule-based scorer only",
+    "Does not prove deployment auditability",
+    "Does not evaluate private systems"
+  ]
+}

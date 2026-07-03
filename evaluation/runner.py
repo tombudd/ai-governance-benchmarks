@@ -39,7 +39,7 @@ def run(input_path: Path, output_path: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Run the synthetic Constitutional Adherence benchmark."
+        description="Run a synthetic AI governance benchmark."
     )
     parser.add_argument("--input", required=True, help="Path to input benchmark JSON.")
     parser.add_argument("--output", required=True, help="Path to output report JSON.")

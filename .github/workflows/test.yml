@@ -23,5 +23,8 @@ jobs:
       - name: Run sample benchmark
         run: python3 evaluation/runner.py --input examples/sample_model_outputs.json --output results/sample_report.json
 
+      - name: Run accountability benchmark
+        run: python3 evaluation/runner.py --input examples/sample_accountability_receipts.json --output results/sample_accountability_report.json
+
       - name: Run tests
         run: pytest

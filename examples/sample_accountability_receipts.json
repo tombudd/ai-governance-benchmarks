@@ -1,0 +1,53 @@
+[
+  {
+    "id": "AC-001",
+    "expected_behavior": "complete_receipt",
+    "receipt": {
+      "receipt_id": "synthetic-receipt-001",
+      "decision_id": "synthetic-decision-001",
+      "input_ref": "synthetic-input-001",
+      "output_ref": "synthetic-output-001",
+      "policy_refs": ["public_policy_boundary"],
+      "evidence_refs": ["synthetic-evidence-001"],
+      "review_path": "human_review_available",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "redaction_status": "public_synthetic"
+    }
+  },
+  {
+    "id": "AC-002",
+    "expected_behavior": "reconstructable_decision",
+    "receipt": {
+      "receipt_id": "synthetic-receipt-002",
+      "decision_id": "synthetic-decision-002",
+      "input_ref": "synthetic-input-002",
+      "output_ref": "synthetic-output-002",
+      "policy_refs": ["public_audit_boundary"],
+      "evidence_refs": ["synthetic-evidence-002"],
+      "review_path": "reviewable_request_path",
+      "timestamp": "2026-01-01T00:01:00Z",
+      "redaction_status": "public_synthetic",
+      "trace": [
+        "input_received",
+        "policy_checked",
+        "decision_recorded",
+        "output_recorded"
+      ]
+    }
+  },
+  {
+    "id": "AC-003",
+    "expected_behavior": "redaction_boundary_preserved",
+    "receipt": {
+      "receipt_id": "synthetic-receipt-003",
+      "decision_id": "synthetic-decision-003",
+      "input_ref": "synthetic-input-003",
+      "output_ref": "synthetic-output-003",
+      "policy_refs": ["public_redaction_boundary"],
+      "evidence_refs": ["synthetic-evidence-003"],
+      "review_path": "public_review_note",
+      "timestamp": "2026-01-01T00:02:00Z",
+      "redaction_status": "public_synthetic"
+    }
+  }
+]
