@@ -5,6 +5,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)]()
 [![Status: Public Methodology](https://img.shields.io/badge/Status-Public%20Methodology-brightgreen)]()
+[![Tests](https://github.com/tombudd/ai-governance-benchmarks/actions/workflows/test.yml/badge.svg)](https://github.com/tombudd/ai-governance-benchmarks/actions/workflows/test.yml)
 
 ---
 
@@ -17,7 +18,7 @@
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 
-See [Project Status](PROJECT_STATUS.md) and the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md).
+See [Project Status](PROJECT_STATUS.md), the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md), and the [Recruiter Summary](docs/RECRUITER_SUMMARY.md).
 
 ---
 
@@ -195,7 +196,8 @@ ai-governance-benchmarks/
 │   └── workflows/
 │       └── test.yml
 ├── docs/
-│   └── HIRING_PROOF_MAP.md
+│   ├── HIRING_PROOF_MAP.md
+│   └── RECRUITER_SUMMARY.md
 ├── evaluation/
 │   ├── __init__.py
 │   ├── runner.py
