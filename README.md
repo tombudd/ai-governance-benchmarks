@@ -8,6 +8,19 @@
 
 ---
 
+## Current Public Status
+
+- Constitutional Adherence V1: verified
+- Accountability Completeness V1: verified
+- Local runners: verified
+- Tests: 9 passing
+- Hiring Proof Map: published
+- Data boundary: synthetic only
+
+See [Project Status](PROJECT_STATUS.md) and the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md).
+
+---
+
 ## Purpose
 
 Capability benchmarks are mature. Governance benchmarks are not.
