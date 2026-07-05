@@ -8,7 +8,7 @@ This repository is a clean-room public benchmark portfolio for AI governance and
 Clean-room AI governance benchmark portfolio with synthetic Constitutional Adherence and Accountability Completeness benchmarks, reproducible local runners, rule-based scoring, expected reports, pytest verification, GitHub Actions CI, and public-safe documentation.
 ```
 
-## What This Repo Proves
+## What This Repo Demonstrates
 
 This repository shows that the builder can:
 
