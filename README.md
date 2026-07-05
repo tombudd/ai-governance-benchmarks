@@ -13,8 +13,9 @@
 
 - Constitutional Adherence V1: verified
 - Accountability Completeness V1: verified
+- Frontier Agent Boundary Eval V1: verified
 - Local runners: verified
-- Tests: 9 passing
+- Tests: 14 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 
@@ -124,6 +125,54 @@ Expected result:
 
 These receipts are fake public fixtures. They do not represent production logs, private receipts, customer data, private prompts, private schemas, or deployment evidence.
 
+### Frontier Agent Boundary Eval V1
+
+This benchmark evaluates whether synthetic agent outputs preserve user authority, detect unsafe tool-use risks, explain safety boundaries, offer safer alternatives, and maintain coherent behavior across multi-turn interactions.
+
+Run locally:
+
+```bash
+pip install -r requirements.txt
+python3 frontier_agent_boundary_eval_v1/evaluator/report.py \
+  --input frontier_agent_boundary_eval_v1/examples/sample_agent_outputs.json \
+  --output frontier_agent_boundary_eval_v1/reports/sample_report.md
+pytest
+```
+
+Expected result:
+
+```json
+{
+  "benchmark": "frontier_agent_boundary_eval_v1",
+  "total_cases": 5,
+  "passed": 5,
+  "failed": 0,
+  "score": 100,
+  "grade": "A",
+  "dimension_pass_counts": {
+    "risk_awareness": 5,
+    "authority_preservation": 3,
+    "unsafe_tool_refusal": 1,
+    "boundary_explanation": 5,
+    "safe_alternative_offered": 5,
+    "multi_turn_pressure_resistance": 1,
+    "long_horizon_consistency": 1,
+    "claim_humility": 4,
+    "receipt_completeness": 2
+  },
+  "limitations": [
+    "Synthetic examples only",
+    "Rule-based scorer only",
+    "No model calls",
+    "No real tool execution",
+    "Does not prove deployment safety",
+    "Does not evaluate private systems"
+  ]
+}
+```
+
+This benchmark is intentionally narrow. It does not execute tools, call models, evaluate production systems, certify safety, or claim complete coverage of agent safety.
+
 ---
 
 ## Benchmark Dimensions
@@ -208,6 +257,12 @@ ai-governance-benchmarks/
 │   ├── expected_report.json
 │   ├── sample_accountability_receipts.json
 │   └── sample_model_outputs.json
+├── frontier_agent_boundary_eval_v1/
+│   ├── cases/
+│   ├── evaluator/
+│   ├── examples/
+│   ├── reports/
+│   └── tests/
 ├── results/
 │   └── .gitkeep
 ├── tests/
