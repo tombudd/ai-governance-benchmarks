@@ -22,6 +22,8 @@
 
 See [Project Status](PROJECT_STATUS.md), the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md), and the [Recruiter Summary](docs/RECRUITER_SUMMARY.md).
 
+For the short map of the current two-layer evaluation stack, see [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md).
+
 ---
 
 ## Purpose

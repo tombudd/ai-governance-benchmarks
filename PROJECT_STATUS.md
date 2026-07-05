@@ -11,6 +11,8 @@ Current public status:
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 
+Overview: [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md)
+
 ## Verification Commands
 
 ```bash
