@@ -10,6 +10,7 @@ Current public status:
 - Tests: 21 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
+- Release: [v1.0.0](https://github.com/tombudd/ai-governance-benchmarks/releases/tag/v1.0.0)
 
 Overview: [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md)
 

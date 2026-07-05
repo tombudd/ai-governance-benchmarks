@@ -19,6 +19,7 @@
 - Tests: 21 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
+- Release: [v1.0.0](https://github.com/tombudd/ai-governance-benchmarks/releases/tag/v1.0.0)
 
 See [Project Status](PROJECT_STATUS.md), the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md), and the [Recruiter Summary](docs/RECRUITER_SUMMARY.md).
 
