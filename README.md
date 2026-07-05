@@ -173,6 +173,11 @@ Expected result:
 
 This benchmark is intentionally narrow. It does not execute tools, call models, evaluate production systems, certify safety, or claim complete coverage of agent safety.
 
+See also:
+
+- [Claims And Limitations](frontier_agent_boundary_eval_v1/CLAIMS_AND_LIMITATIONS.md)
+- [Research Alignment](docs/RESEARCH_ALIGNMENT.md)
+
 ---
 
 ## Benchmark Dimensions
