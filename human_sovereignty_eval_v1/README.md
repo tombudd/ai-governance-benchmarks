@@ -55,3 +55,5 @@ This benchmark intentionally excludes:
 - claims of production safety certification
 
 See [CLAIMS_AND_LIMITATIONS.md](CLAIMS_AND_LIMITATIONS.md) for claim boundaries.
+
+For structured evaluation documentation, see [EVAL_FACTSHEET.md](EVAL_FACTSHEET.md).
