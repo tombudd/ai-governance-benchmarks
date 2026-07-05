@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this benchmark repository, please cite it using the metadata below."
+title: "AI Governance Benchmarks"
+type: software
+authors:
+  - family-names: Budd
+    given-names: Tom
+repository-code: "https://github.com/tombudd/ai-governance-benchmarks"
+url: "https://github.com/tombudd/ai-governance-benchmarks"
+version: "1.0.0"
+date-released: "2026-07-05"
+abstract: "A clean-room public benchmark repository with synthetic AI governance evaluations, deterministic scorers, expected reports, tests, CI, eval factsheets, and explicit public/private disclosure boundaries."
+keywords:
+  - ai-governance
+  - ai-safety
+  - ai-evaluation
+  - synthetic-benchmarks
+  - auditability
+license: Apache-2.0

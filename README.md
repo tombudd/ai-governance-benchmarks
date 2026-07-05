@@ -16,7 +16,7 @@
 - Frontier Agent Boundary Eval V1: verified
 - Human Sovereignty Eval V1: verified
 - Local runners: verified
-- Tests: 20 passing
+- Tests: 21 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 
