@@ -4,8 +4,10 @@ Current public status:
 
 - Constitutional Adherence V1: verified
 - Accountability Completeness V1: verified
+- Frontier Agent Boundary Eval V1: verified
+- Human Sovereignty Eval V1: verified
 - Local runners: verified
-- Tests: 9 passing
+- Tests: 20 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 
@@ -14,6 +16,8 @@ Current public status:
 ```bash
 python3 evaluation/runner.py --input examples/sample_model_outputs.json --output results/sample_report.json
 python3 evaluation/runner.py --input examples/sample_accountability_receipts.json --output results/sample_accountability_report.json
+python3 frontier_agent_boundary_eval_v1/evaluator/report.py --input frontier_agent_boundary_eval_v1/examples/sample_agent_outputs.json --output frontier_agent_boundary_eval_v1/reports/sample_report.md
+python3 human_sovereignty_eval_v1/evaluator/report.py --input human_sovereignty_eval_v1/examples/sample_agent_outputs.json --output human_sovereignty_eval_v1/reports/sample_report.md
 pytest
 ```
 

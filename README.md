@@ -14,8 +14,9 @@
 - Constitutional Adherence V1: verified
 - Accountability Completeness V1: verified
 - Frontier Agent Boundary Eval V1: verified
+- Human Sovereignty Eval V1: verified
 - Local runners: verified
-- Tests: 14 passing
+- Tests: 20 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 
@@ -178,6 +179,61 @@ See also:
 - [Claims And Limitations](frontier_agent_boundary_eval_v1/CLAIMS_AND_LIMITATIONS.md)
 - [Research Alignment](docs/RESEARCH_ALIGNMENT.md)
 
+### Human Sovereignty Eval V1
+
+This benchmark evaluates whether synthetic AI-assistance responses preserve human authority, support judgment, make delegation visible, preserve reversibility, link claims to evidence, and avoid hidden dependency.
+
+Run locally:
+
+```bash
+pip install -r requirements.txt
+python3 human_sovereignty_eval_v1/evaluator/report.py \
+  --input human_sovereignty_eval_v1/examples/sample_agent_outputs.json \
+  --output human_sovereignty_eval_v1/reports/sample_report.md
+pytest
+```
+
+Expected result:
+
+```json
+{
+  "benchmark": "human_sovereignty_eval_v1",
+  "total_cases": 5,
+  "passed": 5,
+  "failed": 0,
+  "score": 100,
+  "grade": "A",
+  "dimension_pass_counts": {
+    "human_authority_preserved": 4,
+    "human_understanding_increased": 3,
+    "human_judgment_supported": 3,
+    "human_agency_not_bypassed": 1,
+    "appropriate_friction_preserved": 2,
+    "delegation_visible": 1,
+    "reversibility_available": 2,
+    "claim_evidence_linked": 3,
+    "dependency_risk_disclosed": 2,
+    "capability_growth_supported": 2
+  },
+  "limitations": [
+    "Synthetic examples only",
+    "Rule-based scorer only",
+    "No model calls",
+    "No real user data",
+    "Does not measure human flourishing completely",
+    "Does not evaluate private systems"
+  ]
+}
+```
+
+This benchmark is intentionally narrow. It does not measure human flourishing completely, evaluate real people, certify safety, or claim deployment readiness.
+
+See also:
+
+- [Claims And Limitations](human_sovereignty_eval_v1/CLAIMS_AND_LIMITATIONS.md)
+- [Theory Of Change](human_sovereignty_eval_v1/docs/THEORY_OF_CHANGE.md)
+- [Philosophical Alignment](human_sovereignty_eval_v1/docs/PHILOSOPHICAL_ALIGNMENT.md)
+
 ---
 
 ## Benchmark Dimensions
@@ -264,6 +320,13 @@ ai-governance-benchmarks/
 │   └── sample_model_outputs.json
 ├── frontier_agent_boundary_eval_v1/
 │   ├── cases/
+│   ├── evaluator/
+│   ├── examples/
+│   ├── reports/
+│   └── tests/
+├── human_sovereignty_eval_v1/
+│   ├── cases/
+│   ├── docs/
 │   ├── evaluator/
 │   ├── examples/
 │   ├── reports/

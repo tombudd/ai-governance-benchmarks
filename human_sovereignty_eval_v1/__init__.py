@@ -1,0 +1,1 @@
+"""Synthetic human sovereignty benchmark."""
