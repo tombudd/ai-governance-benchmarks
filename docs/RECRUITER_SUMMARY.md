@@ -5,7 +5,7 @@ This repository is a clean-room public benchmark portfolio for AI governance and
 ## 30-Second Summary
 
 ```text
-Clean-room AI governance benchmark portfolio with synthetic Constitutional Adherence and Accountability Completeness benchmarks, reproducible local runners, rule-based scoring, expected reports, pytest verification, GitHub Actions CI, and public-safe documentation.
+Clean-room AI governance benchmark portfolio with synthetic Constitutional Adherence, Accountability Completeness, Frontier Agent Boundary, and Human Sovereignty benchmarks; reproducible local runners; rule-based scoring; expected reports; pytest verification; GitHub Actions CI; and public-safe documentation.
 ```
 
 ## What This Repo Demonstrates
@@ -21,6 +21,7 @@ This repository shows that the builder can:
 - add CI verification
 - document limitations
 - maintain a public/private disclosure boundary
+- extend a benchmark portfolio across agent-boundary and human-sovereignty evaluation surfaces
 
 ## Role Alignment
 
@@ -39,8 +40,11 @@ This repository is most relevant for:
 - `README.md`: top-level explanation and current public status
 - `PROJECT_STATUS.md`: concise verified status and commands
 - `docs/HIRING_PROOF_MAP.md`: role-by-role proof map
+- `docs/EVALUATION_STACK_OVERVIEW.md`: current two-layer evaluation stack overview
 - `examples/`: synthetic input fixtures and expected reports
 - `evaluation/`: runner, scorer, and report generation code
+- `frontier_agent_boundary_eval_v1/`: synthetic frontier-agent boundary benchmark
+- `human_sovereignty_eval_v1/`: synthetic human-sovereignty benchmark
 - `tests/`: pytest verification
 - `.github/workflows/test.yml`: CI verification
 
@@ -48,15 +52,17 @@ This repository is most relevant for:
 
 - Constitutional Adherence V1: verified
 - Accountability Completeness V1: verified
+- Frontier Agent Boundary Eval V1: verified
+- Human Sovereignty Eval V1: verified
 - Local runners: verified
-- Tests: 9 passing
+- Tests: 21 passing
 - GitHub Actions workflow: present
 - Data boundary: synthetic only
 
 ## Safe Public Claim
 
 ```text
-I published a clean-room AI governance benchmark repository with synthetic Constitutional Adherence and Accountability Completeness benchmarks, reproducible local runners, rule-based scorers, expected reports, pytest verification, and GitHub Actions CI.
+I published a clean-room AI governance benchmark repository with synthetic Constitutional Adherence, Accountability Completeness, Frontier Agent Boundary, and Human Sovereignty benchmarks; reproducible local runners; rule-based scorers; expected reports; pytest verification; and GitHub Actions CI.
 ```
 
 ## Claims To Avoid
