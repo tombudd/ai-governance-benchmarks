@@ -154,15 +154,51 @@ Expected result:
   "score": 100,
   "grade": "A",
   "dimension_pass_counts": {
-    "risk_awareness": 5,
-    "authority_preservation": 3,
-    "unsafe_tool_refusal": 1,
-    "boundary_explanation": 5,
-    "safe_alternative_offered": 5,
-    "multi_turn_pressure_resistance": 1,
-    "long_horizon_consistency": 1,
-    "claim_humility": 4,
-    "receipt_completeness": 2
+    "risk_awareness": {
+      "passed": 5,
+      "required": 5,
+      "rate": 1.0
+    },
+    "authority_preservation": {
+      "passed": 3,
+      "required": 3,
+      "rate": 1.0
+    },
+    "unsafe_tool_refusal": {
+      "passed": 1,
+      "required": 1,
+      "rate": 1.0
+    },
+    "boundary_explanation": {
+      "passed": 5,
+      "required": 5,
+      "rate": 1.0
+    },
+    "safe_alternative_offered": {
+      "passed": 5,
+      "required": 5,
+      "rate": 1.0
+    },
+    "multi_turn_pressure_resistance": {
+      "passed": 1,
+      "required": 1,
+      "rate": 1.0
+    },
+    "long_horizon_consistency": {
+      "passed": 1,
+      "required": 1,
+      "rate": 1.0
+    },
+    "claim_humility": {
+      "passed": 4,
+      "required": 4,
+      "rate": 1.0
+    },
+    "receipt_completeness": {
+      "passed": 2,
+      "required": 2,
+      "rate": 1.0
+    }
   },
   "limitations": [
     "Synthetic examples only",
@@ -207,16 +243,56 @@ Expected result:
   "score": 100,
   "grade": "A",
   "dimension_pass_counts": {
-    "human_authority_preserved": 4,
-    "human_understanding_increased": 3,
-    "human_judgment_supported": 3,
-    "human_agency_not_bypassed": 1,
-    "appropriate_friction_preserved": 2,
-    "delegation_visible": 1,
-    "reversibility_available": 2,
-    "claim_evidence_linked": 3,
-    "dependency_risk_disclosed": 2,
-    "capability_growth_supported": 2
+    "human_authority_preserved": {
+      "passed": 4,
+      "required": 4,
+      "rate": 1.0
+    },
+    "human_understanding_increased": {
+      "passed": 3,
+      "required": 3,
+      "rate": 1.0
+    },
+    "human_judgment_supported": {
+      "passed": 3,
+      "required": 3,
+      "rate": 1.0
+    },
+    "human_agency_not_bypassed": {
+      "passed": 1,
+      "required": 1,
+      "rate": 1.0
+    },
+    "appropriate_friction_preserved": {
+      "passed": 2,
+      "required": 2,
+      "rate": 1.0
+    },
+    "delegation_visible": {
+      "passed": 1,
+      "required": 1,
+      "rate": 1.0
+    },
+    "reversibility_available": {
+      "passed": 2,
+      "required": 2,
+      "rate": 1.0
+    },
+    "claim_evidence_linked": {
+      "passed": 3,
+      "required": 3,
+      "rate": 1.0
+    },
+    "dependency_risk_disclosed": {
+      "passed": 2,
+      "required": 2,
+      "rate": 1.0
+    },
+    "capability_growth_supported": {
+      "passed": 2,
+      "required": 2,
+      "rate": 1.0
+    }
   },
   "limitations": [
     "Synthetic examples only",
@@ -309,8 +385,12 @@ ai-governance-benchmarks/
 │   └── workflows/
 │       └── test.yml
 ├── docs/
+│   ├── EVALUATION_STACK_OVERVIEW.md
 │   ├── HIRING_PROOF_MAP.md
-│   └── RECRUITER_SUMMARY.md
+│   ├── RECRUITER_SUMMARY.md
+│   ├── RELEASE_NOTES_V1_0_0.md
+│   ├── RESEARCH_ALIGNMENT.md
+│   └── SCOPE_NOTES.md
 ├── evaluation/
 │   ├── __init__.py
 │   ├── runner.py

@@ -58,12 +58,21 @@ def build_report(results: list[CaseScore]) -> dict:
     }
 
 
-def build_dimension_pass_counts(results: list[CaseScore]) -> dict[str, int]:
-    counts = {dimension_name: 0 for dimension_name in DIMENSION_RULES}
+def build_dimension_pass_counts(results: list[CaseScore]) -> dict[str, dict[str, float | int]]:
+    counts = {
+        dimension_name: {"passed": 0, "required": 0, "rate": 0.0}
+        for dimension_name in DIMENSION_RULES
+    }
     for result in results:
         for dimension in result.dimensions:
+            counts[dimension.name]["required"] += 1
             if dimension.passed:
-                counts[dimension.name] += 1
+                counts[dimension.name]["passed"] += 1
+
+    for count in counts.values():
+        required = count["required"]
+        count["rate"] = round(count["passed"] / required, 3) if required else 0.0
+
     return counts
 
 
@@ -82,7 +91,10 @@ def build_markdown_report(report: dict, results: list[CaseScore]) -> str:
         "",
     ]
     for dimension_name, count in report["dimension_pass_counts"].items():
-        lines.append(f"- {dimension_name}: {count}")
+        lines.append(
+            f"- {dimension_name}: {count['passed']}/{count['required']} "
+            f"(rate: {count['rate']})"
+        )
 
     lines.extend(["", "## Cases", ""])
     for result in results:
