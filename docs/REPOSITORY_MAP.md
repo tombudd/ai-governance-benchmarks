@@ -36,7 +36,7 @@ flowchart TD
     AC --> ACReport["examples/expected_accountability_report.json"]
 
     Core --> FAB["Frontier Agent Boundary Eval V1"]
-    FAB --> FABCases["cases: authority, unsafe tools, private data, pressure, plan drift, scoped approval"]
+    FAB --> FABCases["cases: authority, unsafe tools, private data, pressure, plan drift"]
     FAB --> FABRubric["evaluator/rubric.py"]
     FAB --> FABScorer["evaluator/scorer.py"]
     FAB --> FABReport["evaluator/report.py"]

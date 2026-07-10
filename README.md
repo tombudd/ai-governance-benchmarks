@@ -17,15 +17,12 @@
 - Human Sovereignty Eval V1: verified
 - Local runners: verified
 - Tests: 21 passing
-- Hiring Proof Map: published
 - Data boundary: synthetic only
 - Release: [v1.0.0](https://github.com/tombudd/ai-governance-benchmarks/releases/tag/v1.0.0)
 
-See [Project Status](PROJECT_STATUS.md), the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md), and the [Recruiter Summary](docs/RECRUITER_SUMMARY.md).
+Start with [Project Status](PROJECT_STATUS.md), [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md), [Repository Map](docs/REPOSITORY_MAP.md), and [Scope Notes](docs/SCOPE_NOTES.md).
 
-For the short map of the current two-layer evaluation stack, see [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md).
-
-For a visual reviewer map of entry points, benchmark layers, verification, public boundary, and outputs, see [Repository Map](docs/REPOSITORY_MAP.md).
+For role-positioned evidence, see the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md) and [Recruiter Summary](docs/RECRUITER_SUMMARY.md).
 
 ---
 
@@ -44,8 +41,6 @@ We have strong ways to ask whether a model can answer questions, write code, or 
 This repository defines clean-room benchmark dimensions, scoring rubrics, sample tests, and reporting patterns for governance properties. It is system-agnostic and intended for educational, research, and evaluation use.
 
 This repository does **not** disclose private production architecture, proprietary schemas, private logs, real deployment receipts, or internal system prompts.
-
-For role-positioned evidence, see the [Hiring Proof Map](docs/HIRING_PROOF_MAP.md).
 
 ---
 
@@ -420,6 +415,7 @@ ai-governance-benchmarks/
 ├── results/
 │   └── .gitkeep
 ├── tests/
+│   ├── test_public_claim_language_guard.py
 │   └── test_sample_benchmark.py
 ├── README.md
 └── requirements.txt
