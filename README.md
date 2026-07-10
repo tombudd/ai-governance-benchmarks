@@ -25,6 +25,8 @@ See [Project Status](PROJECT_STATUS.md), the [Hiring Proof Map](docs/HIRING_PROO
 
 For the short map of the current two-layer evaluation stack, see [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md).
 
+For a visual reviewer map of entry points, benchmark layers, verification, public boundary, and outputs, see [Repository Map](docs/REPOSITORY_MAP.md).
+
 ---
 
 ## Purpose
@@ -389,6 +391,7 @@ ai-governance-benchmarks/
 │   ├── HIRING_PROOF_MAP.md
 │   ├── RECRUITER_SUMMARY.md
 │   ├── RELEASE_NOTES_V1_0_0.md
+│   ├── REPOSITORY_MAP.md
 │   ├── RESEARCH_ALIGNMENT.md
 │   └── SCOPE_NOTES.md
 ├── evaluation/
