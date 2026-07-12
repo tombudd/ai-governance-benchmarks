@@ -3,8 +3,8 @@
 > Small, reproducible benchmarks for reviewing agentic AI behavior with synthetic cases, deterministic scoring, generated reports, tests, and explicit limitations.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)]()
-[![Status: Public Methodology](https://img.shields.io/badge/Status-Public%20Methodology-brightgreen)]()
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Status: Public Methodology](https://img.shields.io/badge/Status-Public%20Methodology-brightgreen)
 [![Tests](https://github.com/tombudd/ai-governance-benchmarks/actions/workflows/test.yml/badge.svg)](https://github.com/tombudd/ai-governance-benchmarks/actions/workflows/test.yml)
 
 ## Who This Is For
