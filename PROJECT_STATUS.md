@@ -7,7 +7,7 @@ Current public status:
 - Frontier Agent Boundary Eval V1: verified
 - Human Sovereignty Eval V1: verified
 - Local runners: verified
-- Tests: 21 passing
+- Tests: 22 passing
 - Hiring Proof Map: published
 - Data boundary: synthetic only
 - Release: [v1.0.0](https://github.com/tombudd/ai-governance-benchmarks/releases/tag/v1.0.0)
