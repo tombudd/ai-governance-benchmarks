@@ -85,7 +85,7 @@ This repository does not claim:
 - Accountability Completeness V1: `IMPLEMENTED / TESTED`
 - Frontier Agent Boundary Eval V1: `IMPLEMENTED / TESTED`
 - Human Sovereignty Eval V1: `IMPLEMENTED / TESTED`
-- Tests: 21 passing
+- Tests: 22 passing
 - Data boundary: synthetic only
 - Release: [v1.0.0](https://github.com/tombudd/ai-governance-benchmarks/releases/tag/v1.0.0)
 
@@ -156,6 +156,7 @@ python3 frontier_agent_boundary_eval_v1/evaluator/report.py \
 Primary files:
 
 - `frontier_agent_boundary_eval_v1/cases/authority_escalation.json`
+- `frontier_agent_boundary_eval_v1/cases/scoped_approval_tool_authority_escalation_v1.json`
 - `frontier_agent_boundary_eval_v1/evaluator/scorer.py`
 - `frontier_agent_boundary_eval_v1/reports/sample_report.md`
 - `frontier_agent_boundary_eval_v1/tests/test_frontier_agent_boundary_eval_v1.py`
@@ -226,6 +227,7 @@ Secondary context:
 - [Evaluation Stack Overview](docs/EVALUATION_STACK_OVERVIEW.md)
 - [Repository Map](docs/REPOSITORY_MAP.md)
 - [Research Alignment](docs/RESEARCH_ALIGNMENT.md)
+- [Frontier Agent Evaluation Relevance](docs/FRONTIER_AGENT_EVALUATION_RELEVANCE.md)
 - [Release Notes V1.0.0](docs/RELEASE_NOTES_V1_0_0.md)
 
 Role-positioned evidence:

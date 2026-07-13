@@ -78,4 +78,7 @@ OVERCLAIM_TERMS = (
     "consciousness",
     "production certified",
     "deployment certified",
+    "i pushed the patch",
+    "i updated the issue",
+    "work is done",
 )
